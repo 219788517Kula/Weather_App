@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="descrition" content="show weather focust">
+    <meta name="author" content="Lebogang Kula">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+         <h1 class="appName">Weather App</h1>
+         <form>
+            <div class="search">
+             <input type="text" id="city-input" title="Enter city to search" placeholder="Enter city">
+             <input type="submit" value="Get weather" title="search">
+            </div>
+         </form> 
+
+            <div id="weather-details">
+                <div class="icon">
+                <img src="http://openweathermap.org/img/wn/01d.png" alt="weather Icon">
+                </div>
+
+                <div class="Temperature">4°C</div>
+                <div class="description">overcast clouds</div>
+                <div class="details">
+                  <div class="det1">Feels like: 3°C</div>
+                  <div class="det2">Humidity: 81%</div>
+                  <div class="det3">Wind speed: 1.54 m/s</div>
+                </div>  
+            </div>
+       
+    </div>
+     
+       <script src="index.js"></script> 
+</body>
+</html>

@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    padding: 0;
+    /*creates the font of the body contents*/
+    font-family: "montsrrat", sans-serif;
+    /*creates the background color of the body*/
+    background-color: antiquewhite;
+}
+.container{
+    /*creates the background color of the container*/
+    background-color: white;
+    /* creates a box shadow around the container*/
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);   
+    /*aligns the container contents in the center*/
+    text-align: center;
+    /*creates an automatic margin for left and right sides*/
+    margin: 0 auto;
+    /*creates a space of 50 pixels from the top between the body and the container*/ 
+    margin-top: 50px;
+    /*creates a max width for the container*/
+    max-width: 600px;
+    /*cretaes a rounded corners on th container*/
+    border-radius: 9px ;
+    /*creates a 20 pixels between the text and the container*/
+    padding: 20px;
+    border: solid rgb(129, 129, 226);
+}
+form {
+    /*display form contents atteched next to each other*/
+    display: flex;
+    /*align form items horizontally to the center*/
+    justify-content: center;
+    /*align form items vertically to the center*/
+    align-items: center;
+
+    
+}
+
+form input[type="text"]{
+    padding: 10px;
+    /*remove border*/
+    border: none;
+    /*remove border outline the input text*/
+    outline: none;
+    /*increase the font size*/
+    font-size: 15px;
+    /*set the width of the input*/
+    width: 60%;
+}
+form input[type="submit"]{
+    
+    /*creates the color of the submit button*/
+    background-color: blue;
+    /*creates the color of the text of the submit button*/
+    color: white;
+    /*remove border of the submit button*/
+    border: none;
+    padding: 10px 15px;
+    /*creates a border radius*/
+    border-radius: 5px;
+    /*creates a font size*/
+    font-size: 13px;
+    /*creates a pointing hand as a cursor*/
+    cursor: pointer;
+    /*how smooth the color changes*/
+    transition: background-color 0.3s ease;
+}
+form input[type="submit"]:hover{
+    background-color: rgb(112, 112, 218);
+    
+}
+.icon img{
+   width: 100px;
+   height: 100px; 
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center center
+}
+.Temperature{
+    font-size: 50px;
+    margin-bottom: 8px;
+}
+.description{
+    font-size: 20px;
+}
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    margin-top: 20px;  
+}
+.details > div{
+    padding: 30px;
+    background-color: #f1f1f1;
+    margin: 10px;
+    flex: 1;
+    text-align: center;
+    min-height: 35px;
+}
+@media(max-width:700px){
+    form{
+        flex-direction: column;
+        
+    }
+    form input[type="text"]{
+        width: 100%;  
+        margin-bottom: 10px;
+      }
+}
+
+
+
+/*
+.details .det1, .det2, .det3{
+    background-color: rgb(232, 228, 228);
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+*/
+
+ 
+
+
